@@ -8,47 +8,67 @@
     <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
     <body>
-        <nav><ul class="menu">
-        <li>
-            <a href="accueil.html">Accueil</a>
-        </li>
-        <li>
-            <a href="historique.html">Historique</a>
-        </li>
-        <li>
-            <a href="les incontournables.html">Les Incontournables</a>
-        </li>
-    </ul>
-        </nav>
-    <title>
-        
-    </title>
-     <h1>Bienvenue à la LOUPE !</h1> 
+        <nav>
+            <ul class="menu">
+              <li> 
+                <span class="material-icons">home</span>
+                <a href="index.html">Accueil</a> 
+              </li>
+               <span class="material-icons">history_edu</span>
+                <li> <a href="historique.html">Historique</a>
+                </li>
+                <span class="material-icons">tour</span>
+                <li> <a href="incontournables.html">Les Incontournables</a>
+                </li>
+                <li> 
+                  <span class="material-icons">map</span>
+                  <a href="contact.html">Acces</a>
+                </li>
+              </li>
+            </ul>
+          </nav>
+     <h1>Bienvenue à la LOUPE !</h1>
 
-     <div class="flex-container">
-         <div class="myslides">
-         <img src="./assets/photo4.jpg" />
-         </div>
+<div class="slider">
+    <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
 
-         <div class="myslides"></div>
-         <img src="./assets/photo5.jpg" />
-     </div>
-
-<a class="prev" onclick="plusSlides(-1)"></a>
-<a class="next" onclick="plusSlides(1)"></a>
-
-<div class="dot-container">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
+<div class="slide first">
+    <img src="assets/photo4.jpg">
 </div>
-     </div>
-        <h2>Présentation :</h2>
+<div class="slide">
+    <img src="assets/photo5.jpg">
+</div>
+<div class="slide">
+    <img src="assets/photo6.jpg">
+</div>
+
+<div class="navigation-auto">
+<div class="auto-btn1"></div>
+<div class="auto-btn2"></div>
+<div class="auto-btn3"></div>
+</div>
+
+    </div>
+    <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+    </div>
+</div>
+
+
+
+     <h2>Présentation :</h2>
 
         <p>Loupe est une commune française située dans le département d'Eure-et-Loir, en région Centre-Val de Loire. 
             C'est une commune du Parc naturel régional du Perche. Elle est le siège de la communauté de communes Terres de Perche.
             La Loupe est située dans l'arrondissement de Nogent-le-Rotrou, dans la région naturelle du Perche.
         </p> 
-    
+
+        <script src="script.js"></script>
 </body>
 <div class="footer">
     <footer>
