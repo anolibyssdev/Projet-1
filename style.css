@@ -1,18 +1,11 @@
 /* Corps de la page entière */
 * {
-<<<<<<< HEAD
   background-color: #AEE0FA;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-=======
-  background-color: #5f92ad;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
->>>>>>> c4dea3a (Merge index.html)
   color: #004163;
   font-size: 0, 5rem;
 }
 p {
-<<<<<<< HEAD
   flex-direction: initial;
   text-align: justify;
  
@@ -52,119 +45,10 @@ img {
   max-width: 100%;
 
 }
-=======
-  width: 400px;
-  overflow: hidden;
-}
-body {
-  background-color: #5f92ad;
-}
-
-.slider {
-  width: 800px;
-  height: 500px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.slides {
-  width: 500%;
-  height: 500px;
-  display: flex;
-}
-
-.slides input {
-  display: none;
-}
-
-.slide {
-  width: 20%;
-  transition: 2s;
-}
-
-.slide img {
-  width: 800px;
-  height: 500px;
-}
-
-.navigation-manual {
-  position: absolute;
-  width: 800px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-  background: none;
-}
-
-.manual-btn {
-  border: 2px solid #5f92ad;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-  background: none;
-}
-
-.manual-btn:not(:last-child) {
-  margin-right: 40px;
-}
-
-.manual-btn:hover {
-  background: #5f92ad;
-}
-
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-  margin-left: -20%;
-}
-
-#radio3:checked ~ .first {
-  margin-left: -40%;
-}
-
-.navigation-auto {
-  position: absolute;
-  background: none;
-  display: flex;
-  width: 800px;
-  justify-content: center;
-  margin-top: 460px;
-}
-
-.navigation-auto div {
-  border: 2px solid #5f92ad;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-  background: none;
-}
-
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: #5f92ad;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: #5f92ad;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: #5f92ad;
-}
-
-
->>>>>>> c4dea3a (Merge index.html)
 
 /* Titre des paragraphes */
 
 h1 {
-<<<<<<< HEAD
   background-color: #AEE0FA;
   font-size: 0,1rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -173,25 +57,12 @@ h1 {
 h2 {
   background-color:#AEE0FA;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-=======
-  background-color: #5f92ad;
-  font-size: 0, 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-h2 {
-  background-color: #5f92ad;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
->>>>>>> c4dea3a (Merge index.html)
   color: #004163;
   font-size: medium;
 }
 /* Les paragraphes*/
 
 h3 {
-<<<<<<< HEAD
   
   /* align-items: center;
   align-content: center; */
@@ -209,17 +80,6 @@ nav {
   justify-content: space-around;  
   height: 100px;
   height: 200px;
-=======
-  align-items: center;
-  align-content: center;
-  background-color: #5f92ad;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #004163;
-}
-nav {
-  display: flex;
->>>>>>> c4dea3a (Merge index.html)
 }
 
 nav ul {
@@ -234,7 +94,6 @@ nav ul li {
   
 }
 
-<<<<<<< HEAD
 ul {
   list-style: none;
   text-align: start;
@@ -296,11 +155,6 @@ p.footer-basic {
 
 
 .footer-basic {
-=======
-/* ************ */
-
-/* .footer-basic {
->>>>>>> c4dea3a (Merge index.html)
     padding:40px 0;
     background-color:#ffffff;
     color:#4b4c4d;
@@ -320,7 +174,7 @@ p.footer-basic {
   }
   
   .footer-basic ul a {
-    color:icity: 0.8;
+    opacity: 0.8;
   }
   
   .footer-basic ul a:hover {
@@ -356,11 +210,7 @@ p.footer-basic {
     font-size:13px;
     color:#aaa;
     margin-bottom:0;
-<<<<<<< HEAD
    }
 
   
     
-=======
-  } */
->>>>>>> c4dea3a (Merge index.html)
