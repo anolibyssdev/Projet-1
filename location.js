@@ -16,8 +16,14 @@ function initMaps() {
         position: local,
         map: map,
         animation: google.maps.Animation.DROP,
-        icon: { url: 'Wild_Code_School.png',
+        icon: {url: 'Wild_Code_School.png',
         scaledSize: new google.maps.Size(50, 50)
     }
     });
+}
+
+const tmp = document.getElementById("submit").addEventListener('click', no_refresh(e));
+
+function no_refresh(e){
+    e.preventDefault();
 }

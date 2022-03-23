@@ -28,16 +28,17 @@
                 </ul>
             </nav>
         </header>
-        <!--Linear element display in column-->
         <section class="map">
             <h1 class="title-contact">Venez nous rendre visite</h1>
-            <!--GG Maps location-->
             <div id="maps"></div>
+            <!--
+                Backup-Solution
             <div class="map">
                 <div class="gmap_canvas">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21161.010024301922!2d1.0086162469632383!3d48.47329187208519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e3c1f93cc28e5b%3A0x6ed6fb7657b76f29!2s28240%20La%20Loupe%2C%20France!5e0!3m2!1sfr!2sus!4v1647426177996!5m2!1sfr!2sus" loading="lazy"></iframe>
                 </div>
             </div>
+            -->
         </section>
         <section class="contact">
             <h2 class="title-contact-secondary">Contactez-nous !</h2>
@@ -47,7 +48,7 @@
                     <span><!--Flèche + rotation--></span>
                 </div>
                 <div class="grid-right">
-                    <form onsubmit="false">
+                    <form id="form">
                         <input type="text" id="fname" name="first-name" placeholder="Prénom">
 
                         <input type="text" id="lname" name="last-name" placeholder="Nom">
