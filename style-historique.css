@@ -1,7 +1,7 @@
 /* Corps de la page entière */
 
 * {
-  background-color: #C2B3A9;
+  background-color: rgba(255, 255, 255, 0.666);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,31 +9,35 @@
   color: #423D3A;
   font-size: 0, 5rem;
 }
+/* body {
+  margin: 0%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.666),
+      rgba(255, 255, 255, 0.4)
+    ),   */
+ 
+
 p {
   margin: 40px;
   flex-direction: initial;
   text-align: justify;
   font-size: 0,5rem;
   color: #423D3A;
+  /* letter-spacing:1px; */
+  word-spacing: 2px
 }
 
-.logo img {
-align-items: center;
-margin-top: 50px;
-margin-bottom: 0%;
-/* padding: 10px; */
-width: 200px;
-box-shadow: #423D3A;
-
-}
 
 
 .photo-historique {
     align-content: space-between;
      width: clamp(240px, 60%, 600px);
       aspect-ratio: 3/2;
-      justify-content: space-evenly;
-      margin: 30px;
+      flex-direction: center;
+      align-items: center;
+      justify-content: space-around;
+      margin: 60px;
+      margin-left: 50px;
       text-align: center;
       border : 2px solid #000000;
       box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
@@ -46,7 +50,7 @@ box-shadow: #423D3A;
 }
 
 .photo-historique:hover {
-   transform:scale(1.2);
+   transform:scale(1.1);
 }
 /* *********responsive*********** */
 
@@ -62,19 +66,19 @@ box-shadow: #423D3A;
 
 /* Titre des paragraphes */
 
-h1 {
+ h1 {
   margin: 50px;
   text-align: center;
-  background-color: #C2B3A9;
+  /* background-color: #C2B3A9; */
   font-size: 0,3rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: underline; 
   color: #423D3A;
-  text-decoration: underline;
-}
+} 
 
 h2 {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #004163;
+  /* color: #004163; */
   font-size: large;
 }
 
@@ -82,18 +86,24 @@ h2 {
 
 h3 {
   margin: 30px;
-  /* align-items: center;
-  align-content: center; */
+  align-items: center;
+  align-content: center; 
   text-align:center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #423D3A;
   font: size 0.3em;
+  background-color:rgba(255, 255, 255, 0.666);;
 }
 h4 {
-  margin: 30px;
+  margin: 50px;
+  color: #423D3A;
+ 
+  
 }
 
 /* ******** menu nav ****** */
+
+
 li a {
   display: block;
   padding: 14px 16px;
@@ -108,14 +118,12 @@ ul {
   list-style-type: none;
   overflow: hidden;
   background-color: #4B4C4D;
+  
 }
 li {
   float: left;
   border-right: 1px solid #bbb;
-}
-
-
-
+} 
 
 
 
@@ -137,112 +145,3 @@ li {
 
 
 
-/*START OF INCONTOURNABLES*/
-
-#pattern{
-  display: grid;
-  width: 100%;
-  grid-template-columns: 3fr 2fr;
-  gap: 2px;
-  background-color: white;
-  aspect-ratio: 2/1;
-}
-
-#subgrid_1 {
-  display: grid;
-  grid-template-rows: 2fr 1fr;
-  gap: 2px;
-  background-color: blue;
-}
-
-#subgrid_2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
-  background-color: violet;
-}
-
-#element_1 {
-  background-image: url(./assets/laloupeancienne1.jpg);
-  background-size: cover;
-}
-
-#element_2 {
-  background-image: url(./assets/laloupeancienne1.jpg);
-  background-size: cover;
-}
-
-#element_3 {
-  background-image: url(./assets/laloupeancienne1.jpg);
-  background-size: cover;
-}
-
-#element_4 {
-  background-image: url(./assets/laloupeancienne1.jpg);
-  background-size: cover;
-}
-
-.titre-incontournable {
-  display: flex;
-  margin: 25px auto;
-  width: 90%;
-  color: #000000;
-  font-size: 3rem;
-  text-decoration: underline;
-}
-
-#titre-wild {
-  text-align: center;
-  text-decoration: none;
-  justify-content: center;
-}
-
-.flex-container {
-  display: flex;
-  margin: auto;
-  width: 90%;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.elements {
-  display: inherit;
-  position: relative;
-  opacity: 1;
-  margin: 25px;
-  width: clamp(200px, 50%, 400px);
-  background-color: white;
-  border: solid 15px lightgrey;
-  outline: 4px solid black;
-  border-radius: 10px;
-  aspect-ratio: 1;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.elements::before {
-  content: "";
-  position: absolute;
-  background-image: url(./assets/laloupeancienne1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  transition: all .5s;
-  cursor: pointer;
-}
-
-.elements:hover::before {
-  opacity: 0.3;
-  transition: all .5s;
-}
-
-.elements a {
-  box-sizing: content-box;
-  width: 100%;
-  height: 100%;
-}
