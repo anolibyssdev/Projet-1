@@ -1,12 +1,11 @@
 /* Corps de la page entière */
 * {
-  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #004163;
+  color: #000000;
   font-size: 0, 5rem;
 }
 
@@ -16,7 +15,7 @@ body {
       rgba(255, 255, 255, 0.666),
       rgba(255, 255, 255, 0.4)
     ),
-    url("assets/fond1.jpg");
+    url("assets/fond2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -28,7 +27,7 @@ p {
   flex-direction: initial;
   text-align: justify;
   font-size: 0, 5rem;
-  color: #004163;
+  color: #000000;
 }
 .logo img {
   align-items: center;
@@ -77,7 +76,6 @@ p {
 h1 {
   margin: 50px;
   text-align: center;
-  /* background-color: #aee0fa; */
   font-size: 0, 3rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -88,9 +86,9 @@ h1 {
 h2 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #004163;
+  color: #000000;
   font-size: large;
-  margin-top: 3;
+  margin-top: 3%;
 }
 
 /* Les paragraphes*/
@@ -100,7 +98,6 @@ h3 {
   /* align-items: center;
   align-content: center; */
   text-align: center;
-  background-color: #000000;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #355261;
@@ -132,14 +129,6 @@ li {
 /* ************ */
 
 /* ******** menu ****** */
-
-/* ************ */
-
-/* .flex-container {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-} */
 
 p.footer-basic {
   text-align: center;
@@ -211,13 +200,34 @@ p.footer-basic {
   background: #aee0fa;
 }
 
-.text {
-  width: 350px;
-  border: 5px solid rgb(112, 111, 111);
-  text-align: justify;
-  margin-top: 5%;
-  margin-left: 5%;
+.texte {
+display: flex;
+flex-wrap: wrap;
 }
+
+#text1 {
+  width: 400px;
+  border: 5px solid rgb(112, 111, 111);
+  margin-left: 10%;
+  margin-top: 10%;
+  height: 0%;
+}
+
+#text2 {
+  width: 400px;
+  border: 5px solid rgb(112, 111, 111);
+  margin-left: 20%;
+  margin-top: 20%;
+  height: 0%;
+}
+
+#text3 {
+  width: 400px;
+  border: 5px solid rgb(112, 111, 111);
+  margin-left: 10%;
+  margin-top: 40%;
+}
+
 
 .footer-basic {
   padding: 40px 0;
@@ -385,4 +395,17 @@ p.footer-basic {
   box-sizing: content-box;
   width: 100%;
   height: 100%;
+}
+
+.paragraphe h2 {
+  margin-top: 5%;
+}
+
+.paragraphe p {
+margin-top: 3%;
+margin-bottom: 3%;
+}
+
+.paragraphe {
+  margin-left: 1%;
 }
