@@ -85,25 +85,32 @@ h3 {
   font: size 0.3em;
 }
 
-/* ******** menu ****** */
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;  
-  height: 100px;
-  height: 200px;
+ul {
+  margin: 0%;
+  padding: 0%;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #4B4C4D;
 }
 
-nav ul {
-  list-style: none;
-  text-align: left;
-  justify-content: space-evenly;
-  
+li {
+  float: left;
+  border-right: 1px solid #bbb;
 }
-nav ul li {
-  display: inline;
-  align-items: flex-start;
-} 
+
+li a {
+  display: block;
+  padding: 14px 16px;
+  background-color: #4B4C4D;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
 
 
 

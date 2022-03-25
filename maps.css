@@ -34,8 +34,8 @@
 .contact {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    width: clamp(320px, 90%, 960px);
+    margin: 50px auto;
+    width: clamp(280px, 90%, 960px);
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-gap: 10px;
+    grid-gap: 1em;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -80,7 +80,7 @@
 }
 
 .grid-title {
-    font-size: 48px;
+    font-size: 3em;
     color: black;
 }
 
@@ -122,18 +122,20 @@ form textarea {
 
 .title-contact {
     margin-bottom: 25px;
+    font-size: 2vw;
     color: black;
 }
 
 .title-contact-secondary {
     display: none;
     margin-bottom: 25px;
-    font-size: 48px;
+    font-size: 22px;
     color: black;
 }
 
 @media screen and (max-width: 900px) {
     .contact {
+        margin: 15px auto 50px auto;
         width: clamp(320px, 90%, 400px);
     }
     .contact-grid {
@@ -146,7 +148,13 @@ form textarea {
     .grid-left {
         display: none;
     }
+    .title-contact {
+        font-size: 22px;
+    }
     .title-contact-secondary {
         display: initial;
+    }
+    .gmnoprint {
+        display: none;
     }
 }

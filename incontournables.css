@@ -3,7 +3,8 @@
     width: 100%;
     grid-template-columns: 3fr 2fr;
     gap: 2px;
-    background-color: white;
+    background-color: lightgrey;
+    border-bottom: 2px solid black;
     aspect-ratio: 2/1;
 }
   
@@ -11,33 +12,31 @@
     display: grid;
     grid-template-rows: 2fr 1fr;
     gap: 2px;
-    background-color: blue;
 }
 
 #subgrid_2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2px;
-    background-color: violet;
 }
   
 #element_1 {
-    background-image: url(./assets/laloupeancienne1.jpg);
+    background-image: url(./assets/Mosaique_1.png);
     background-size: cover;
 }
   
 #element_2 {
-    background-image: url(./assets/laloupeancienne1.jpg);
+    background-image: url(./assets/Mosaique_2.png);
     background-size: cover;
 }
   
 #element_3 {
-    background-image: url(./assets/laloupeancienne1.jpg);
+    background-image: url(./assets/Mosaique_3.png);
     background-size: cover;
 }
-  
+
 #element_4 {
-    background-image: url(./assets/laloupeancienne1.jpg);
+    background-image: url(./assets/Mosaique_4.png);
     background-size: cover;
 }
   
@@ -46,14 +45,7 @@
     margin: 25px auto;
     width: 90%;
     color: #000000;
-    font-size: 3rem;
-    text-decoration: underline;
-}
-  
-#titre-wild {
-    text-align: center;
-    text-decoration: none;
-    justify-content: center;
+    font-size: 3vw;
 }
   
 .flex-container {
@@ -69,21 +61,20 @@
     position: relative;
     opacity: 1;
     margin: 25px;
-    width: clamp(200px, 50%, 400px);
+    width: clamp(200px, 75%, 400px);
     background-color: white;
     border: solid 15px lightgrey;
     outline: 4px solid black;
     border-radius: 10px;
-    aspect-ratio: 1;
     justify-content: center;
     align-items: center;
     text-align: center;
+    aspect-ratio: 1;
 }
   
 .elements::before {
     content: "";
     position: absolute;
-    background-image: url(./assets/laloupeancienne1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     top: 0;
@@ -99,9 +90,71 @@
     opacity: 0.3;
     transition: all .5s;
 }
-  
-.elements a {
-    box-sizing: content-box;
-    width: 100%;
-    height: 100%;
+
+.elements p {
+    margin: auto;
+    width: 90%;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .titre-incontournable {
+      font-size: 24px;
+    }
+    .elements p {
+        font-size: 3vw;
+    }
+}
+
+
+/***** Beware, ugly things coming up ! *****/
+
+
+#culture_1::before {
+    background-image: url(./assets/Chateau_LaLoupe.png);
+}
+
+#culture_2::before {
+    background-image: url(./assets/Aqueduc_Boizard.png);
+}
+
+#culture_3::before {
+    background-image: url(./assets/Chateau_Riviere.png);
+}
+
+#culture_4::before {
+    background-image: url(./assets/Chateau_Fraze.png);
+}
+
+#sport_1::before {
+    background-image: url(./assets/Parc_des_Vaux.png);
+}
+
+#sport_2::before {
+    background-image: url(./assets/Aerodrome.png);
+}
+
+#sport_3::before {
+    background-image: url(./assets/Parc_Aquatique.png);
+}
+
+#sport_4::before {
+    background-image: url(./assets/Stade_Loupeen.png);
+}
+
+#sport_5::before {
+    background-image: url(./assets/Etang_Perruchet.png);
+}
+
+#education_1::before {
+    background-image: url(./assets/Wild_Code_School.png);
+}
+
+#education_2::before {
+    background-image: url(./assets/Chateau_des_Vaux.png);
+}
+
+#education_3::before {
+    background-image: url(./assets/College_Jean_Monnet.png);
 }
