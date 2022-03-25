@@ -23,6 +23,7 @@ body {
 }
 
 p {
+  margin: 40px;
   flex-direction: initial;
   text-align: justify;
   font-size: 0, 5rem;
@@ -38,7 +39,7 @@ p {
 }
 
 .home {
-  /* color: #004163; */
+  color: #004163;
 }
 
 .photo-historique {
@@ -73,6 +74,7 @@ p {
 /* Titre des paragraphes */
 
 h1 {
+  margin: 50px;
   text-align: center;
   font-size: 0, 3rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -92,6 +94,7 @@ h2 {
 /* Les paragraphes*/
 
 h3 {
+  margin: 30px;
   /* align-items: center;
   align-content: center; */
   text-align: center;
